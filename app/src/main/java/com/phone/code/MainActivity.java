@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.phone.code.ball.BallTest;
+import com.phone.code.ball.FloatText;
 import com.phone.code.bezier.BezierTest;
 import com.phone.code.clock.ClockTest;
 import com.phone.code.loading.LoadingTest;
@@ -15,7 +16,7 @@ import com.phone.code.wave.WaveTest;
 
 public class MainActivity extends ListActivity {
 
-    private String titles[]={"wave","clock","bezier","ball","loading"};
+    private String titles[]={"wave","clock","bezier","ball","loading","float","test"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +44,12 @@ public class MainActivity extends ListActivity {
                 break;
             case 4:
                 intent=new Intent(this, LoadingTest.class);
+                break;
+            case 5:
+                intent=new Intent(this, FloatText.class);
+                break;
+            case 6:
+                intent=new Intent(this, TestActivity.class);
                 break;
         }
         if(intent!=null){

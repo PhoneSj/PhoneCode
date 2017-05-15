@@ -20,6 +20,8 @@
         <activity android:name=".bezier.BezierTest"/>
         <activity android:name=".ball.BallTest"/>
         <activity android:name=".loading.LoadingTest"/>
+        <activity android:name=".ball.FloatText"/>
+        <activity android:name=".TestActivity"/>
     </application>
 
 </manifest>
