@@ -115,8 +115,8 @@ public class LoadingView extends View {
             mBalls.get(i).draw(canvas, mBallPaint);
 
             if(i+1< mBalls.size()){
-                drawContactBezier(canvas, mBalls.get(i), mBalls.get(i+1));
-                drawUncontacBezier(canvas, mBalls.get(i), mBalls.get(i+1));
+                drawContactArea(canvas, mBalls.get(i), mBalls.get(i+1));
+                drawUncontacArea(canvas, mBalls.get(i), mBalls.get(i+1));
             }
         }
     }
@@ -127,7 +127,7 @@ public class LoadingView extends View {
      * @param ballA
      * @param ballB
      */
-    private void drawUncontacBezier(Canvas canvas,Ball ballA,Ball ballB) {
+    private void drawUncontacArea(Canvas canvas,Ball ballA,Ball ballB) {
         Point pointA=ballA.getCenter();
         Point pointB=ballB.getCenter();
         int radiusA=ballA.getRadius();
@@ -176,7 +176,7 @@ public class LoadingView extends View {
      * @param ballA
      * @param ballB
      */
-    private void drawContactBezier(Canvas canvas,Ball ballA,Ball ballB) {
+    private void drawContactArea(Canvas canvas,Ball ballA,Ball ballB) {
         Point pointA=ballA.getCenter();
         Point pointB=ballB.getCenter();
         int radiusA=ballA.getRadius();
@@ -230,8 +230,8 @@ public class LoadingView extends View {
      * @return
      */
     private double calculateDeltaAngle(int index) {
-        double originAngle=index*mMaxDeltaAngle/ mBallCount *Math.sin(mFraction *Math.PI);
-        return originAngle;
+        double newFraction=0.5*Math.sin(Math.PI*2*(mFraction-0.25))+0.5;
+        return index*mMaxDeltaAngle/mBallCount*newFraction;
     }
 
     /**
@@ -239,7 +239,8 @@ public class LoadingView extends View {
      * @return
      */
     private double calculateCurrentAngle() {
-        return 2*Math.PI*(mFraction -0.25f);
+        double newFraction=0.5*Math.sin(Math.PI*(mFraction-0.5))+0.5;
+        return (newFraction-0.25)*Math.PI*2;
     }
 
     private int getRadius(int index) {

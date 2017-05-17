@@ -1,18 +1,43 @@
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:paddingLeft="16dp">
 
     <TextView
+        android:id="@+id/first"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_orange_dark"/>
+        android:background="@android:color/holo_orange_dark"
+        android:visibility="visible"/>
 
     <TextView
-        android:layout_width="100dp"
+        android:id="@+id/second"
+        android:layout_width="90dp"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_blue_dark"/>
+        android:layout_toRightOf="@id/first"
+        android:background="@android:color/holo_blue_dark"
+        android:visibility="visible"/>
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/third"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/second"
+        android:background="@android:color/holo_green_dark"/>
+
+    <!--android:layout_alignLeft="@id/second"优先级次低-->
+    <!--android:layout_alignLeft="@id/second"优先级次高-->
+    <!--android:layout_alignParentLeft="true"优先级最高-->
+    <!--android:layout_centerHorizontal="true"优先级最低-->
+
+    <TextView
+        android:id="@+id/fourth"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/third"
+        android:background="@android:color/holo_purple"/>
+
+</RelativeLayout>
