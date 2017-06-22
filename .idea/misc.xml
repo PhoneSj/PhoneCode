@@ -4,10 +4,10 @@
     <option name="defaultSettings" value="true" />
     <option name="formatter" value="ECLIPSE" />
     <option name="id" value="1487898512388" />
-    <option name="importOrderConfigFilePath" value="$PROJECT_DIR$/../UCDFormatter1110.xml" />
+    <option name="importOrderConfigFilePath" value="F:/UCDFormatter1110.xml" />
     <option name="importOrderFromFile" value="true" />
     <option name="name" value="default" />
-    <option name="pathToConfigFileJava" value="$PROJECT_DIR$/../UCDFormatter1110.xml" />
+    <option name="pathToConfigFileJava" value="F:/UCDFormatter1110.xml" />
     <option name="selectedJavaProfile" value="UCDFormatter" />
   </component>
   <component name="EntryPointsManager">
