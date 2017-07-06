@@ -2,7 +2,6 @@
 <project version="4">
   <component name="EclipseCodeFormatter">
     <option name="defaultSettings" value="true" />
-    <option name="formatter" value="ECLIPSE" />
     <option name="id" value="1487898512388" />
     <option name="importOrderConfigFilePath" value="F:/UCDFormatter1110.xml" />
     <option name="importOrderFromFile" value="true" />
@@ -52,6 +51,9 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\dell\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="masterDetails">
     <states>

@@ -1,9 +1,18 @@
-### LoadingView
+## WaveView
+![WaveView](preview/WaveView_01.gif)
+
+## BezierView
+![BezierView](preview/BezierView_01.gif)
+
+## BallView
+![BallView](preView/BallView_01.gif)
+
+## LoadingView
 正常速度效果：
-![image](preview/LoadingView_01.gif)
+![LoadingView](preview/LoadingView_01.gif)
 
 慢速度效果：
-![image](preview/LoadingView_02.gif)
+![LoadingView](preview/LoadingView_02.gif)
 
 
 
