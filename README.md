@@ -5,7 +5,11 @@
 ![BezierView](preview/BezierView_01.gif)
 
 ## BallView
-![BallView](preView/BallView_01.gif)
+#### 矩形拟合
+![矩形拟合](preview/BallView_01.gif)
+
+#### 曲线拟合
+![曲线拟合](preview/BallView_02.gif)
 
 ## LoadingView
 正常速度效果：
